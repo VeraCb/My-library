@@ -1,131 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofoliu</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+   
+    <link rel="stylesheet" href="./CSS/styles.css"/>
+    <title>Portfoliu</title>
 </head>
 <body>
-    <header>
-    <nav>
-        <!-- logo -->
-        <a href="./index.html">WebStudio</a>
-        <ul>
-            <!-- navigation list -->
-          <li>
-            <a href="index.html">Studio</a>
-          </li>
-          <li>
-            <a href="index.html">Portfolio</a>
-          </li>
-          <li>
-            <a href="index.html">Contacts</a>
-          </li>
-      
-        </ul>
-      </nav>
-        <address>
-            <!-- contacts -->
-          <ul>
+    <div class="app-wrapper">
+        <header class="header-container">
+            <!-- header div -->
+        <div class="header-section container">
+        <nav class="navigation-container">
+          <!-- navigation logo /logo-info-->
+          <a href="./index.html" class="logo-link link">Web<span class="logo-info">Studio</span>
+           </a>
+          <ul class="list">
             <li>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tel:+110001111111">+11 (000) 111-11-11</a>
-        </li>
-        </ul>
-        </address>
-    </header>
+              <a class="list-link link" href="./index.html" >Studio</a>
+            </li>
+            <li>
+              <a class="list-link link" href="./portfolio.html" >Portfolio</a>
+            </li>
+            <li>
+              <a class="list-link link" href="" >Contacts</a>
+            </li>
+          </ul>
+        <!-- </div> -->
+        </nav>
+        <!-- address container -->
+          <address class="address-container">
+           
+            <ul class="list">
+              <li>
+                <!--  address link-->
+            <a href="mailto:info@devstudio.com" class="address-link link" >info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+110001111111" class="address-link link" >+11 (000) 111-11-11</a>
+          </li>
+          </ul>
+          </address>
+        </div>
+          </header>
         <main>
+            <section class="main-section">
+              <div class="main-div container">
+                <h1 class="visually-hidden"> Skills Category</h1>
             <!-- app menu -->
-            <ul>
-                <li>
-                    <button type="menu">All</button>
+            <ul class="button-list">
+                <li >
+                    <button type="button" class="button-info">All</button>
                 </li>
-                <li>
-                    <button type="menu">Web Site</button>
+                <li >
+                    <button type="button" class="button-info">Web Site</button>
                 </li>
-                <li>
-                    <button type="menu">App</button>
+                <li >
+                    <button type="button" class="button-info">App</button>
                 </li>
-                <li>
-                    <button type="menu">Design</button>
+                <li > 
+                    <button type="button" class="button-info">Design</button>
                 </li>
-                <li>
-                    <button type="menu">Marketing</button>
+                <li >
+                    <button type="button" class="button-info">Marketing</button>
                 </li>
-            </ul>
-            <ul>
-                <!-- first services  list -->
-                <li>
-                    <img src="./images/img-11.jpg.jpg" alt="app interface" width="360" height="300">
-                    <h3>Banking App Interface Concept App</h3>
-                    <p>App</p>
+        </ul>
+        <ul class="list second-list ">
+                <li class="secondary-list">
+                    <a class="portfolio-link link" href="" >
+                    <img src="./images/img-11.jpg" alt="app interface" width="360">
+                    <div class="link-div">
+                    <h2 class="link-title">Banking App Interface Concept</h2>
+                    <p class="paragraf">App</p>
+                  </div>
+                </a>
                 </li>
-                <li>
-                    <img src="images/img-12.jpg.jpg" alt="Payment" width="360" height="300">
-                    <h3>Cashless Payment</h3>
-                    <p>Marketing</p>
-                </li>
-                <li>
-                    <img src="images/img-13.jpg.jpg" alt="laptop" width="360" height="300">
-                    <h3>Meditation App</h3>
-                    <p>App</p>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <img src="images/img-14.jpg.jpg" alt="taxi" width="360" height="300">
-                    <h3>Taxi Service</h3>
-                    <p>Marketing</p>
-                </li>
-                <li>
-                    <img src="images/img-15.jpg.jpg" alt="phone screen" width="360" height="300">
-                    <h3>Screen Illustrations Design</h3>
-                    <p>Design</p>
-                </li>
-                <li>
-                    <img src="images/img-16.jpg.jpg" alt="Girl" width="360" height="300">
-                    <h3>Online Courses</h3>
-                    <p>Marketing</p>
-                </li>
-                <ul>
-                    <li>
-                        <img src="images/img-17.jpg.jpg" alt="Stories Concept" width="360" height="300">
-                        <h3>Instagram Stories Concept</h3>
-                        <p>Design</p>
-                    </li>
-                    <li>
-                        <img src="images/img-18.jpg.jpg" alt="Food" width="360" height="300">
-                        <h3>Organic Food</h3>
-                        <p>Web Site</p>
-                    </li>
-                    <li>
-                        <img src="images/img-19.jpg.jpg" alt="Coffee" width="360" height="300">
-                        <h3>Fresh Coffee</h3>
-                        <p>Web Site</p>
-                    </li>
-                </ul>
 
+                <li class="secondary-list">
+                    <a class="portfolio-link link" href="">
+                    <img src="./images/img-12.jpg" alt="Payment" width="360">
+                    <div class="link-div">
+                    <h2 class="link-title">Cashless Payment</h2>
+                    <p class="paragraf">Marketing</p>
+                  </div>
+                </a>
+                </li>
+
+                <li class="secondary-list">
+                    <a class="portfolio-link link" href="">
+                    <img src="./images/img-13.jpg" alt="laptop" width="360">
+                    <div class="link-div">
+                    <h2 class="link-title">Meditation App</h2>
+                    <p class="paragraf">App</p>
+                  </div>
+                </a>
+                </li>
+
+                <li class="secondary-list">
+                    <a class="portfolio-link link" href="">
+                    <img src="./images/img-14.jpg" alt="taxi" width="360">
+                    <div class="link-div">
+                    <h2 class="link-title">Taxi Service</h2>
+                    <p class="paragraf">Marketing</p>
+                  </div>
+                </a>
+                </li>
+
+                <li class="secondary-list">
+                    <a class="portfolio-link link" href="">
+                    <img src="./images/img-15.jpg" alt="phone screen" width="360">
+                    <div class="link-div">
+                    <h2 class="link-title">Screen Illustrations </h2>
+                    <p class="paragraf">Design</p>
+                  </div>
+                </a>
+                </li>
+
+                <li class="secondary-list">
+                    <a class="portfolio-link link" href="">
+                    <img src="./images/img-16.jpg" alt="Girl" width="360">
+                    <div class="link-div">
+                    <h2 class="link-title">Online Courses</h2>
+                    <p class="paragraf">Marketing</p>
+                  </div>
+                </a>
+                </li>
+
+                    <li class="secondary-list">
+                        <a class="portfolio-link link" href="">
+                        <img src="./images/img-17.jpg" alt="Stories Concept" width="360">
+                        <div class="link-div">
+                        <h2 class="link-title">Instagram Stories Concept</h2>
+                        <p class="paragraf">Design</p>
+                      </div>
+                    </a>
+                    </li>
+
+                    <li class="secondary-list">
+                        <a class="portfolio-link link" href="">
+                        <img src="./images/img-18.jpg" alt="Food" width="360">
+                        <div class="link-div">
+                        <h2 class="link-title">Organic Food</h2>
+                        <p class="paragraf">Web Site</p>
+                      </div>
+                    </a>
+                    </li>
+
+                    <li class="secondary-list">
+                        <a class="portfolio-link link" href="">
+                        <img src="./images/img-19.jpg" alt="Coffee" width="360">
+                        <div class="link-div">
+                        <h2 class="link-title">Fresh Coffee</h2>
+                        <p class="paragraf">Web Site</p>
+                      </div>
+                    </a>
+                    </li>
             </ul>
-        </main>
-        <footer>
+          </div>
+</section>
+</main>
+<!-- footer -->
+
+<footer class="footer-container">
+  <div class="footer-div container">
+    <div class="l-p-div">
+    <a href="./index.html" class="logo-link footer-link"
+      >Web<span class="second-logo">Studio</span></a
+    >
+    <p class="footer-paragraf">
+      Increase the flow of customers and sales for your business with
+      digital marketing & growth solutions.
+    </p>
+  </div>
     
-            <a href="./index.html">WebStudio</a>
-            <p>Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
-            <address>
-              <ul>
-                <li>
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li>
-              <a href="tel:+110001111111">+11 (000) 111-11-11</a>
-            </li>
-            </ul>
-            </address>
-          
-          
-        </footer>
+
+    <div class="social-media-container">
+      <p class="social-media-title">Social media</p>
+      <ul class="social-media-list">
+        <li class="social-media-item">
+          <a href="" class="social-media-link">
+            <svg class="social-icons" width="24" height="24">
+              <use href="./images/icons.svg#instagram2"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="social-media-item">
+          <a href="" class="social-media-link">
+            <svg class="social-icons" width="24" height="24">
+              <use href="./images/icons.svg#twitter2"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="social-media-item">
+          <a href="" class="social-media-link"> 
+            <svg class="social-icons" width="24" height="24">
+              <use href="./images/icons.svg#facebook2"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="social-media-item">
+          <a href="" class="social-media-link">
+            <svg class="social-icons" width="24" height="24">
+              <use href="./images/icons.svg#linkedin2"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+  </div>
 </body>
 </html>
