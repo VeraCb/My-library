@@ -31,7 +31,7 @@
             <ul class="list">
               <li>
                 <!-- navigation link -->
-                <a class="list-link link" href="./index.html">Studio</a>
+                <a class="list-link link studio" href="./index.html">Studio</a>
               </li>
               <li>
                 <a class="list-link link" href="./portfolio.html">Portfolio</a>
@@ -64,7 +64,8 @@
           <!-- hero-title -->
           <div class="hero-div container">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            <button  type="button" class="button-style">Order Service</button>
+            <button data-modal-open type="button" 
+            class="button-style " >Order Service</button>
             
           </div>
         </section>
@@ -422,7 +423,16 @@
           </div>
         </div>
       </footer>
+      <div data-modal class="modal-container is-hidden">
+       <div class="modal-button">
+        <button data-modal-close type="button" class="modal-button-style">
+          <svg width="8" height="8" class="btn-svg">
+            <use href="./images/icons.svg#close-black"> </use>
+          </svg>
+        </button>
+      </div>
+      </div>
     </div>
-    <script src="modal.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
