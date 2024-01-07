@@ -1,438 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELHONO</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./CSS/styles.css"/>
-    <title>Studio</title>
-  </head>
-
-  <body>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
     <div class="app-container">
-      <!-- header container -->
-
-      <header class="header-container">
-        <!-- header div -->
-        <div class="header-section container">
-          <nav class="navigation-container">
-            <!-- navigation logo /logo-info-->
-            <a href="./index.html" class="logo-link link"
-              >Web<span class="logo-info">Studio</span>
-            </a>
-            <ul class="list">
-              <li>
-                <!-- navigation link -->
-                <a class="list-link link studio" href="./index.html">Studio</a>
-              </li>
-              <li>
-                <a class="list-link link" href="./portfolio.html">Portfolio</a>
-              </li>
-              <li>
-                <a class="list-link link" href="">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-          <!-- address container -->
-          <address class="address-container">
-            <ul class="list">
-              <li>
-                <!--  address link-->
-                <a href="mailto:info@devstudio.com" class="address-link link"
-                  >info@devstudio.com</a>
-              </li>
-              <li>
-                <a href="tel:+110001111111" class="address-link link"
-                  >+11 (000) 111-11-11</a>
-              </li>
-            </ul>
-          </address>
+    <!-- ?header -->
+    <header>
+        <div class="header-container">
+        <div class="logo-container">
+            <svg width="35" height="26" class="logo-svg">
+                <use href="./images/icons.svg#icon-houses"></use>
+            </svg> 
+            <a href="index.html" class="logo-link">SELHONO</a>       
         </div>
-      </header>
-      <!-- main of the page -->
-      <main>
-        <!-- hero-section -->
-        <section class="hero-section">
-          <!-- hero-title -->
-          <div class="hero-div container">
-            <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            <button data-modal-open type="button" 
-            class="button-style " >Order Service</button>
-            
-          </div>
-        </section>
 
-        <!--  section 2-->
-
-        <section class="skills-section">
-          <div class="skills-container container">
-            <h2 class="visually-hidden">Our skills</h2>
-            <ul class="skills-list">
-              <li class="box-list">
-                <div class="icons-container">
-                  <svg class="icons" width="64" height="64">
-                    <use href="./images/icons.svg#antenna1"></use>
-                  </svg>
-                </div>
-                <h3 class="secondary-title">Strategy</h3>
-                <p class="skills-paragraf">
-                  Our goal is to identify the business problem to walk away with
-                  the perfect and creative solution.
-                </p>
-              </li>
-
-              <li class="box-list">
-                <div class="icons-container">
-                  <svg class="icons" width="64" height="64">
-                    <use href="./images/icons.svg#clock1"></use>
-                  </svg>
-                </div>
-                <h3 class="secondary-title">Punctuality</h3>
-                <p class="skills-paragraf">
-                  Bring the key message to the brand's audience for the best
-                  price within the shortest possible time.
-                </p>
-              </li>
-
-              <li class="box-list">
-                <div class="icons-container">
-                  <svg class="icons" width="64" height="64">
-                    <use href="./images/icons.svg#diagram1"></use>
-                  </svg>
-                </div>
-                <h3 class="secondary-title">Diligence</h3>
-                <p class="skills-paragraf">
-                  Research and confirm brands that present the strongest digital
-                  growth opportunities and minimize risk.
-                </p>
-              </li>
-
-              <li class="box-list">
-                <div class="icons-container">
-                  <svg class="icons" width="64" height="64">
-                    <use href="./images/icons.svg#astronaut1"></use>
-                  </svg>
-                </div>
-                <h3 class="secondary-title">Technologies</h3>
-                <p class="skills-paragraf">
-                  Design practice focused on digital experiences. We bring forth
-                  a deep passion for problem-solving.
-                </p>
-              </li>
+        <nav>
+            <ul class="header-list">
+                <li >
+                    <a href="./index.html" class="header-link">Home</a>
+                </li>
+                <li>
+                    <a href="./index.html" class="header-link">Pages</a>
+                </li>
+                <li>
+                    <a href="./index.html" class="header-link">Services</a>
+                </li>
+                <li>
+                    <a href="./index.html" class="header-link">Project</a>
+                
+                <li>
+                    <a href="./index.html" class="header-link">Blog</a>
+                </li>
+                <li>
+                    
+                    <a href="./index.html" class="header-link">Contact</a>
+                    </li>
+                <li>
+                    <a href=""> <i class="fas fa-search"></i> </a>
+                  
+                </li>
             </ul>
-          </div>
-        </section>
-
-        <!--  section 3-->
-
-        <section class="img-section">
-          <div class="img-container container">
-            <h2 class="subtitle">What are we doing</h2>
-            <ul class="list-img">
-              <li class="img-info-list">
-                <img src="./images/img-1.jpg" alt="computer" width="360" class="img-size"/>
-              </li>
-              <li class="img-info-list">
-                <img src="./images/img-2.jpg" alt="app" width="360" class="img-size"/>
-              </li>
-              <li class="img-info-list">
-                <img src="./images/img-3.jpg" alt="phone" width="360" class="img-size"/>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- section 4-->
-
-        <section class="team-section">
-          <div class="list-container container">
-            <h2 class="subtitle">Our Team</h2>
-            <ul class="team-list">
-              <li class="info-list">
-                <img src="./images/img.jpg" alt="Mark Guerrero" width="264" height="260"
-                  class="img-size"
-                />
-                <div class="name-post-div">
-                  <h3 class="secondary-title name">Mark Guerrero</h3>
-                  <p class="p-career">Product Designer</p>
-                    <ul class="social-logo-list">
-                      <li class="social-logo-item"> 
-                        <a href="" class="social-logo-link">
-                        <svg class="social-logo-icon" width="16" height="16">
-                        <use href="./images/icons.svg#instagram1"></use>
-                      </svg>
-                    </a>
-                    </li>
-                      <li class="social-logo-item">
-                        <a href="" class="social-logo-link">
-                          <svg class="social-logo-icon" width="16" height="16">
-                          <use href="./images/icons.svg#twitter1"></use>
-                        </svg>
-                      </a>
-                    </li>
-                      <li class="social-logo-item">
-                        <a href="" class="social-logo-link">
-                          <svg class="social-logo-icon" width="16" height="16">
-                          <use href="./images/icons.svg#facebook1"></use>
-                        </svg>
-                      </a>
-                    </li>
-                      <li class="social-logo-item">
-                        <a href="" class="social-logo-link">
-                          <svg class="social-logo-icon" width="16" height="16">
-                          <use href="./images/icons.svg#linkedin1"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    </ul>
-                </div>
-              </li>
-
-              <li class="info-list">
-                <img src="./images/img1.jpg" alt="Tom Ford" width="264" height="260"
-                  class="img-size"
-                />
-                <div class="name-post-div">
-                  <h3 class="secondary-title name">Tom Ford</h3>
-                  <p class="p-career">Frontend Developer</p>
-                    <ul class="social-logo-list">
-                      <li class="social-logo-item">
-                        <a href="" class="social-logo-link">
-                        <svg class="social-logo-icon" width="16" height="16">
-                        <use href="./images/icons.svg#instagram1"></use>
-                      </svg>
-                    </a>
-                    </li>
-                      <li class="social-logo-item">
-                        <a href="" class="social-logo-link">
-                        <svg class="social-logo-icon" width="16" height="16">
-                        <use href="./images/icons.svg#twitter1"></use>
-                      </svg>
-                    </a>
-                    </li>
-                      <li class="social-logo-item">
-                        <a href="" class="social-logo-link">
-                        <svg class="social-logo-icon" width="16" height="16">
-                        <use href="./images/icons.svg#facebook1"></use>
-                      </svg>
-                    </a>
-                    </li>
-                      <li class="social-logo-item">
-                        <a href="" class="social-logo-link">
-                        <svg class="social-logo-icon" width="16" height="16">
-                        <use href="./images/icons.svg#linkedin1"></use>
-                      </svg>
-                    </a>
-                    </li>
-                    </ul>
-                </div>
-              </li>
-
-              <li class="info-list">
-                <img src="./images/img2.jpg" alt="Camila Garcia" width="264" height="260"
-                  class="img-size"
-                />
-                <div class="name-post-div">
-                  <h3 class="secondary-title name">Camila Garcia</h3>
-                  <p class="p-career">Marketing</p>
-                    <ul class="social-logo-list">
-                      <li class="social-logo-item">
-                        <a href="" class="social-logo-link">
-                        <svg class="social-logo-icon" width="16" height="16">
-                        <use href="./images/icons.svg#instagram1"></use>
-                      </svg>
-                    </a>
-                    </li>
-                      <li class="social-logo-item">
-                        <a href="" class="social-logo-link">
-                        <svg class="social-logo-icon" width="16" height="16">
-                        <use href="./images/icons.svg#twitter1"></use>
-                      </svg>
-                    </a>
-                    </li>
-                      <li class="social-logo-item">
-                        <a href="" class="social-logo-link">
-                        <svg class="social-logo-icon" width="16" height="16">
-                        <use href="./images/icons.svg#facebook1"></use>
-                      </svg>
-                    </a>
-                    </li>
-                      <li class="social-logo-item">
-                        <a href="" class="social-logo-link">
-                        <svg class="social-logo-icon" width="16" height="16">
-                        <use href="./images/icons.svg#linkedin1"></use>
-                      </svg>
-                    </a>
-                    </li>
-                    </ul>
-                </div>
-              </li>
-
-              <li class="info-list">
-                <img src="./images/img3.jpg" alt="Daniel Wilson" width="264" height="260"
-                  class="img-size"
-                />
-                <div class="name-post-div">
-                  <h3 class="secondary-title name">Daniel Wilson</h3>
-                  <p class="p-career">UI Designer</p>
-                    <ul class="social-logo-list">
-                      <li class="social-logo-item">
-                        <a href="" class="social-logo-link">
-                        <svg class="social-logo-icon" width="16" height="16">
-                        <use href="./images/icons.svg#instagram1"></use>
-                      </svg>
-                    </a>
-                    </li>
-                      <li class="social-logo-item">
-                        <a href="" class="social-logo-link">
-                        <svg class="social-logo-icon" width="16" height="16">
-                        <use href="./images/icons.svg#twitter1"></use>
-                      </svg>
-                    </a>
-                    </li>
-                      <li class="social-logo-item">
-                        <a href="" class="social-logo-link">
-                        <svg class="social-logo-icon" width="16" height="16">
-                        <use href="./images/icons.svg#facebook1"></use>
-                      </svg>
-                    </a>
-                    </li>
-                      <li class="social-logo-item">
-                        <a href="" class="social-logo-link">
-                        <svg class="social-logo-icon" width="16" height="16">
-                        <use href="./images/icons.svg#linkedin1"></use>
-                      </svg>
-                    </a>
-                    </li>
-                    </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <!-- customers section 5-->
-        <section class="customers-section">
-          <div class="container">
-            <h2 class="customers-title">Customers</h2>
-            <ul class="list-customers">
-              <li class="icons-list">
-                <a href="" class="customer-link">
-                <svg class="icons-customers" width="104" height="56">
-                  <use href="./images/icons.svg#client1"></use>
-                </svg>
-              </a>
-              </li>
-              <li class="icons-list">
-                <a href="" class="customer-link">
-                <svg class="icons-customers" width="104" height="56">
-                  <use href="./images/icons.svg#client2"></use>
-                </svg>
-              </a>
-              </li>
-              <li class="icons-list">
-                <a href="" class="customer-link">
-                <svg class="icons-customers" width="104" height="56">
-                  <use href="./images/icons.svg#client3"></use>
-                </svg>
-              </a>
-              </li>
-              <li class="icons-list">
-                <a href="" class="customer-link">
-                <svg class="icons-customers" width="104" height="56"> 
-                  <use href="./images/icons.svg#client4"></use>
-                </svg>
-              </a>
-              </li>
-              <li class="icons-list">
-                <a href="" class="customer-link">
-                <svg class="icons-customers" width="104" height="56">
-                  <use href="./images/icons.svg#client5"></use>
-                </svg>
-              </a>
-              </li>
-              <li class="icons-list">
-                <a href="" class="customer-link">
-                <svg class="icons-customers" width="104" height="56">
-                  <use href="./images/icons.svg#client6"></use>
-                </svg>
-              </a>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </main>
-
-      <!-- footer -->
-
-      <footer class="footer-container">
-        <div class="footer-div container">
-          <div class="l-p-div">
-          <a href="./index.html" class="logo-link footer-link"
-            >Web<span class="second-logo">Studio</span></a
-          >
-          <p class="footer-paragraf">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
+        </nav>
         </div>
-          
+    </header>
+    <!-- !main of the page -->
+    <main>
+        <!-- section 1 -->
+        <section>
+            <div class="first-section-div">
+<h1 class="main-title">Let's make your
+home beautiful together</h1>
+<p class="first-section-p">There are many variations of the passages of lorem Ipsum fromavailable, majority.</p>
+<button type="button" class="first-section-btn">Get Started
+    <i class="fas fa-arrow-right"></i>
+</button>
+</div>
+        </section>
+<!-- section 2 -->
+<section>
+<ul>
+    <li>
+        <h3>Project Plan</h3>
+        <p>There are many variations of the passages of lorem Ipsum from 
+available, majority.</p>
+<button type="button">Read More
+    <i class="fas fa-arrow-right"></i>
+</button>
+    </li>
+    <li>
+         <h3>Interior Work</h3>
+        <p>There are many variations of the passages of lorem Ipsum from 
+available, majority.</p>
+<button type="button">Read More
+    <i class="fas fa-arrow-right"></i>
+</button>
+    </li>
+    <li>
+         <h3>Realization</h3>
+        <p>There are many variations of the passages of lorem Ipsum from 
+available, majority.</p>
+<button type="button">Read More
+    <i class="fas fa-arrow-right"></i>
+</button>
+    </li>
+</ul>
+</section>
+<!-- section 3 -->
+<section>
+<div>
+    <h2>We create art
+for modern life</h2>
+<p>There are many variations of the passages of lorem Ipsum from 
+available, majority.</p>
+<div>
+    <svg width="93" height="93">
+        <use href="./images/icons.svg#icon-call-icon"></use>
+    </svg>
+    <a href="tel:+012345678">012345678</a>
+    <p>Call Us Anytime</p>
+</div>
+<button type="button">Get Free Estimate
+    <i class="fas fa-arrow-right"></i>
+</button>
+</div>
+</section>
+<!-- section 4 -->
+<section>
+    <h2>What the People Thinks
+ About Us</h2>
+ <ul>
+    <li>
+        <img src="./images/photo-1.png" alt="A blond woman" width="171" height="171">
+        <h4>Natasha</h4>
+        <p> Moscow, Russia</p>
+        <p>Lorem Ipsum is simply dummy 
+text of the typesetting industry. 
+Ipsum has been.</p>
+    </li>
+    <li><img src="./images/photo-2.png" alt="A blond woman" width="171" height="171">
+        <h4>Raymond Galario</h4>
+        <p> UK, London</p>
+        <p>Lorem Ipsum is simply dummy 
+text of the typesetting industry. 
+Ipsum has been scrambled it 
+to make a type book.</p></li>
+    <li><img src="./images/photo-3.png" alt="A blond woman" width="171" height="171">
+        <h4>Benny Roll </h4>
+        <p> USA, New York</p>
+        <p>Lorem Ipsum is simply dummy 
+text of the typesetting industry. 
+Ipsum has been.Ipsum has been scrambled.</p></li>
+ </ul>
+</section>
+<!-- section 5 -->
+<section>
+    <div>
+        <ul>
+            <li>
+                <svg width="80" height="50">
+                    <use href="./images/icons.svg#icon-buffer"></use>
+                </svg>
+            </li>
+            <li><svg width="80" height="30">
+                    <use href="./images/icons.svg#icon-piramide"></use>
+                </svg></li>
 
-          <div class="social-media-container">
-            <p class="social-media-title">Social media</p>
-            <ul class="social-media-list">
-              <li class="social-media-item">
-                <a href="" class="social-media-link">
-                  <svg class="social-icons" width="24" height="24">
-                    <use href="./images/icons.svg#instagram2"></use>
-                  </svg>
-                </a>
-              </li>
+            <li><svg width="50" height="30">
+                    <use href="./images/icons.svg#icon-vector-1"></use>
+                </svg>
+            <svg width="50" height="30">
+                    <use href="./images/icons.svg#icon-vector-2"></use>
+                </svg>
+            <svg width="50" height="30">
+                    <use href="./images/icons.svg#icon-vector-3"></use>
+                </svg>
+            <svg width="50" height="30">
+                    <use href="./images/icons.svg#icon-vector-4"></use>
+                </svg></li>
 
-              <li class="social-media-item">
-                <a href="" class="social-media-link">
-                  <svg class="social-icons" width="24" height="24">
-                    <use href="./images/icons.svg#twitter2"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="social-media-item">
-                <a href="" class="social-media-link"> 
-                  <svg class="social-icons" width="24" height="24">
-                    <use href="./images/icons.svg#facebook2"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="social-media-item">
-                <a href="" class="social-media-link">
-                  <svg class="social-icons" width="24" height="24">
-                    <use href="./images/icons.svg#linkedin2"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
-      <div data-modal class="modal-container is-hidden">
-       <div class="modal-button">
-        <button data-modal-close type="button" class="modal-button-style">
-          <svg width="8" height="8" class="btn-svg">
-            <use href="./images/icons.svg#close-black"> </use>
-          </svg>
-        </button>
-      </div>
-      </div>
+            <li><svg width="80" height="30">
+                    <use href="./images/icons.svg#icon-frame"></use>
+                </svg></li>
+        </ul>
     </div>
-    <script src="./js/modal.js"></script>
-  </body>
+</section>
+<!-- section 6 -->
+<section>
+<div>
+    <h2>Follow Our Projects</h2>
+    <p>It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.</p>
+</div>
+<div>
+    <ul>
+        <li>
+            <img src="./images/photo-11.jpg" alt="Bed & orange pillow" width="547" height="548">
+            <p>Modern bedroom</p>
+            <p>Decor / Artchitecture</p>
+        </li>
+        <li>
+            <img src="./images/photo-12.jpg" alt="Bed & Mirror" width="547" height="548">
+            <p>Modern bedroom</p>
+            <p>Decor / Artchitecture</p>
+        </li>
+        <li>
+            <img src="./images/photo-13.jpg" alt="Bed & green pillow" width="547" height="548">
+            <p>Modern bedroom</p>
+            <p>Decor / Artchitecture</p>
+        </li>
+        <li>
+            <img src="./images/photo-14.jpg" alt="Bed & green pillow" width="547" height="548">
+            <p>Modern bedroom</p>
+            <p>Decor / Artchitecture</p>
+        </li>
+    </ul>
+</div>
+</section>
+<!-- section 7 -->
+<section>
+    <ul>
+        <li>12</li>
+        <p>|</p>
+        <li>1074</li>
+        <p>|</p>
+        <li>98</li>
+        <p>|</p>
+        <li>583</li>
+    </ul>
+</section>
+<!-- section 8 -->
+<section>
+    <div>
+        <h2>Articles & News</h2>
+        <p>It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.</p>
+    </div>
+    <div>
+        <ul>
+            <li>
+                <img src="./images/photo-22.png" alt="kitchen_1" width="350" height="350">
+                <p>Kitchan Design</p>
+                <h3>Let's Get Solution For Building Construction Work</h3>
+                <p>26 December,2022 </p>
+                <button type="button">
+                    <svg width="52" height="52">
+                        <use href="./images/icons.svg#icon-arrow-beige"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <img src="./images/photo-23.png" alt="kitchen_1" width="350" height="350">
+                <p>Living Design</p>
+                <h3>Low Cost Latest Invented Interior Designing
+Ideas.</h3>
+                <p>22 November,2023</p>
+                <button type="button">
+                    <svg width="52" height="52">
+                        <use href="./images/icons.svg#icon-arrow-beige"></use>
+                    </svg>
+                </button></li>
+            <li>
+                <img src="./images/photo-24.png" alt="kitchen_1" width="350" height="350">
+                <p>Interior Design</p>
+                <h3>Best For Any Office & Business Interior 
+Solution </p>
+                <p>4 December,2023</p> 
+                <button type="button">
+                    <svg width="52" height="52">
+                        <use href="./images/icons.svg#icon-arrow-beige"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+</section>
+    </main>
+    <!--  TODO:footer -->
+    <section>
+        <div>
+            <h2>Wanna join the interno?</h2>
+            <p>It is a long established fact  will be distracted.</p>
+            <button type="button">Contact With Us
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        <div>
+            <svg width="50" height="50">
+                <use href="./images/icons.svg#icon-houses"></use>
+            </svg> 
+            <a href="index.html">SELHONO</a> 
+            <p>It is a long established fact that a reader will be distracted lookings.</p>
+            <ul>
+                <li>
+                    <svg width="12" height="22">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </li>
+                <li> <svg width="12" height="22">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg></li>
+                <li> <svg width="12" height="22">
+                        <use href="./images/icons.svg#icon-linkedin2"></use>
+                    </svg></li>
+                <li> <svg width="12" height="22">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li> <h3>Pages</h3></li>
+                <li> <button type="button">About Us</button></li>
+                <li> <button type="button">Our Projects</button></li>
+                <li> <button type="button">Our Team</button></li>
+                <li> <button type="button">Contact Us</button></li>
+                <li> <button type="button">Services</button></li>
+            </ul>
+        </div>
+         <div>
+            <ul>
+                <li> <h3 type="button">Services</h3></li>
+                <li> <button type="button">Kitchen</button></li>
+                <li> <button type="button">Living Area</button></li>
+                <li> <button type="button">Bathroom</button></li>
+                <li> <button type="button">Dinning Hall</button></li>
+                <li> <button type="button">Bedroom</button></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            
+             <p>55 East Birchwood Ave. Brooklyn, New York 11201</p>
+
+             <a href="mailto:contact@selhono.com">contact@selhono.com</a>
+
+             <a href="tel:+1234567890">(123) 456 - 7890</a>
+
+        </div>
+
+        Copyright &copy; SELHONO
+    </section>
+    </div>
+</body>
 </html>

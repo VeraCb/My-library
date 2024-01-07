@@ -1,0 +1,118 @@
+body{
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Jost', sans-serif;
+    background-color: antiquewhite;
+  
+}
+
+.app-container{
+    width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(252, 249, 244);
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    width: 1210px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo-container{
+     position: relative;
+}
+.logo-svg{
+    
+    position: absolute;
+    left: 5.13px;
+    top: 10px;
+    
+}
+.logo-link{
+    color: #292F36;
+    font-size: 20px;
+    font-family: DM Serif Display;
+    font-weight: 400;
+    line-height: 50px;
+    text-decoration: none;
+    position: relative;
+    left: 40px;
+   
+}
+.header-list{
+    width: 586px;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    gap: 30px;
+}
+
+.fa-search{
+    color: rgb(110, 110, 110);
+    
+    
+}
+.header-link{
+    color: #292F36;
+    font-size: 20px;
+    font-family: Jost;
+    font-weight: 500;
+    line-height: 25px;
+    text-decoration: none;
+}
+.header-link:hover,
+.header-link:focus{
+    color: #C76904;
+}
+.first-section-div{
+    background-image: url(./images/b-image_1.jpg);
+    width: 1210px;
+    height: 750px;
+    border-radius: 100px 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 162px;
+   
+
+}
+.main-title{
+    width: 699px;
+    height: 162px;
+    color: white;
+    font-size: 65px;
+    font-family: DM Serif Display;
+    font-weight: 400;
+    line-height: 81.25px;
+    padding-top: 55px;
+    padding-left: 25px;
+    margin: 0px;
+  
+
+}
+.first-section-p{
+    width: 470px;
+    color: white;
+    font-size: 22px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 33px;
+    letter-spacing: 0.22px;
+    margin:0;
+    padding-left: 25px;
+}
+.first-section-btn{
+    
+    color: white;
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 22.50px;
+    letter-spacing: 0.36px;
+    background-color:#CDA274 ;
+    border: none;
+    border-radius: 18px;
+    padding: 26px 49px;
+    box-shadow: 0px 10px 20px rgba(192.31, 192.31, 192.31, 0.35);
+    margin-top: 25px;
+    margin-left: 25px;
+}
