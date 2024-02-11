@@ -808,6 +808,78 @@ margin-bottom: 131px;
 gap: 101px;
 }
 /* second part of footer */
+/* svg effect */
+.facebook-svg{
+border: 2px solid #0679e6;
+border-radius: 50% ;
+padding-inline: 10px; 
+}
+.facebook{
+fill: #0679e6;
+transition: 0.4s;
+transition-delay: 0.2ms;
+}
+
+.facebook-svg:hover{
+    box-shadow: 0 0 7px #0679e6 inset,
+                0 0 7px #0679e6;
+    transition: 0.4s ease-in-out;
+    transform: rotateY(360deg);
+}
+
+.twitter-svg{
+border: 2px solid #1c9ff1;
+border-radius: 50% ;
+padding-inline: 10px; 
+}
+.twitter{
+fill: #1c9ff1;
+transition: 0.4s;
+transition-delay: 0.2ms;
+}
+
+.twitter-svg:hover{
+    box-shadow: 0 0 7px #1c9ff1 inset,
+                0 0 7px #1c9ff1;
+    transition: 0.4s ease-in-out;
+    transform: rotateY(360deg);
+}
+
+.linkedin-svg{
+border: 2px solid #5a86eb;
+border-radius: 50% ;
+padding-inline: 10px; 
+}
+.linkedin{
+fill: #5a86eb;
+transition: 0.4s;
+transition-delay: 0.2ms;
+}
+
+.linkedin-svg:hover{
+    box-shadow: 0 0 7px #5a86eb inset,
+                0 0 7px #5a86eb;
+    transition: 0.4s ease-in-out;
+    transform: rotateY(360deg);
+}
+
+.instagram-svg{
+border: 2px solid #ff0095;
+border-radius: 50% ;
+padding-inline: 10px;
+}
+.instagram{
+fill: #ff0095;
+transition: 0.4s;
+transition-delay: 0.2ms;
+}
+
+.instagram-svg:hover{
+    box-shadow: 0 0 7px #ff0095 inset,
+                0 0 7px #ff0095;
+    transition: 0.4s ease-in-out;
+    transform: rotateY(360deg);
+}
 .logo-svg-second{
     width: 50px;
     height: 50px;

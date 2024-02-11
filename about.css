@@ -6,7 +6,7 @@ body{
 }
 
 .app-container{
-    width: 1005;
+    max-width: 1005;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(252, 249, 244);
@@ -19,6 +19,8 @@ body{
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
 .logo-container{
      position: relative;
@@ -41,6 +43,14 @@ body{
     left: 40px;
    
 }
+.logo-link:hover{
+     background-image: linear-gradient(80deg, #00ffff, #ff00c3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s ease-in-out; 
+    font-size: 22px; 
+}
 .header-list{
     width: 586px;
     list-style: none;
@@ -56,10 +66,8 @@ body{
 }
 .fa-search:hover,
 .fa-search:focus{
-    color: #C76904;
-    box-shadow: 0px 0px 9px #C76904 inset,
-                0px 2px 7px #d67004;
-                border-radius: 10px;
+    color: #67e4e4;
+    transition: 0.4s ease-in-out; 
 }
 .header-link{
     color: #292F36;
@@ -73,10 +81,13 @@ body{
 }
 .header-link:hover,
 .header-link:focus{
-    color: #C76904;
-    box-shadow: 0px 0px 9px #C76904 inset,
-                0px 2px 7px #d67004;
-                border-radius: 10px;
+    /* color: #0077f7; */
+    background-image: linear-gradient(80deg, #00ffff, #ff00c3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s ease-in-out; 
+    font-size: 22px;           
 
 
 }
@@ -85,6 +96,7 @@ body{
     text-decoration: underline #CDA274;
 }
 /* section 1 */
+
 .fst-section{
     width: 100%;
     position: relative;
@@ -181,6 +193,15 @@ body{
     box-shadow: 0px 10px 20px rgba(192.31, 192.31, 192.31, 0.35);
     border-radius: 18px;
 }
+.thrd-section-btn:hover{
+     background-image: linear-gradient(80deg, #00ffff, #ff00c3);
+    -webkit-background-clip: box;
+    background-clip: box;
+    -webkit-box-fill-color: transparent;
+    transition: 0.4s ease-in-out; 
+    font-size: 15px; 
+    border: 1px solid black;
+}
 .thrd-section-img{
     border-top-left-radius: 130px;
 }
@@ -207,6 +228,7 @@ body{
     background-color: #CDA274;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 296px;
 }
 .f-s-container{
     padding: 20px;
@@ -298,6 +320,7 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    margin-bottom: 380px;
 
 }
 .six-section-title{
@@ -309,10 +332,11 @@ body{
     line-height: 62.50px;
     letter-spacing: 1px;
     text-align:center;
+    align-self: center;
 }
 .six-section-list{
     display: inline-flex;
-    gap: 100px;
+    gap: 265px;
     padding:0 ;
     margin-left: 0px;
 }
@@ -321,11 +345,37 @@ body{
  
 }
 .six-section-label{
-    width: 270px;
+    width: 472px;
     background-color: transparent;
     border:none;
     border-bottom: 1px solid #4D5053;
-    
+    margin-bottom: 235px;
+}
+.message-label{
+     width: 100%;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #4D5053;
+    margin-bottom: 61px;
+}
+.six-section-btn{
+    width: 220px;
+    padding: 26px 41px;
+    color: aliceblue;
+    background-color: #292F36;
+    box-shadow: 0px 10px 20px rgba(192.31, 192.31, 192.31, 0.35);
+    border-radius: 18px;
+    align-self: center;
+}
+.six-section-btn:hover{
+    background-image: linear-gradient(80deg, #00ffff, #ff00c3);
+    -webkit-background-clip: box;
+    background-clip: box;
+    -webkit-box-fill-color: transparent;
+    transition: 0.4s ease-in-out; 
+    font-size: 15px; 
+    border: 1px solid black;
+
 }
 
 /* footer */
@@ -338,6 +388,82 @@ gap: 60px;
 
 }
 /* second part of footer */
+/* svg effect */
+.facebook-svg{
+border: 2px solid #0679e6;
+border-radius: 50% ;
+padding-inline: 10px; 
+}
+.facebook{
+fill: #0679e6;
+transition: 0.4s;
+transition-delay: 0.2ms;
+}
+
+.facebook-svg:hover{
+    box-shadow: 0 0 7px #0679e6 inset,
+                0 0 7px #0679e6;
+    transition: 0.4s ease-in-out;
+    transform: rotateY(360deg);
+}
+
+.twitter-svg{
+border: 2px solid #1c9ff1;
+border-radius: 50% ;
+padding-inline: 10px; 
+}
+.twitter{
+fill: #1c9ff1;
+transition: 0.4s;
+transition-delay: 0.2ms;
+}
+
+.twitter-svg:hover{
+    box-shadow: 0 0 7px #1c9ff1 inset,
+                0 0 7px #1c9ff1;
+    transition: 0.4s ease-in-out;
+    transform: rotateY(360deg);
+}
+
+.linkedin-svg{
+border: 2px solid #5a86eb;
+border-radius: 50% ;
+padding-inline: 10px; 
+}
+.linkedin{
+fill: #5a86eb;
+transition: 0.4s;
+transition-delay: 0.2ms;
+}
+
+.linkedin-svg:hover{
+    box-shadow: 0 0 7px #5a86eb inset,
+                0 0 7px #5a86eb;
+    transition: 0.4s ease-in-out;
+    transform: rotateY(360deg);
+}
+
+.instagram-svg{
+border: 2px solid #ff0095;
+border-radius: 50% ;
+padding-inline: 10px;
+}
+.instagram{
+fill: #ff0095;
+transition: 0.4s;
+transition-delay: 0.2ms;
+}
+
+.instagram-svg:hover{
+    box-shadow: 0 0 7px #ff0095 inset,
+                0 0 7px #ff0095;
+    transition: 0.4s ease-in-out;
+    transform: rotateY(360deg);
+}
+
+
+
+
 .logo-svg-second{
     width: 50px;
     height: 50px;
@@ -370,9 +496,15 @@ gap: 60px;
 }
 .second-footer-item{
     list-style: none;
-    
-}
+     
+ }     
+
+
 /* third-five part of footer */
+.third-footer-list{
+    
+    padding-left: 0;
+}
 .third-footer-item{
     list-style: none;
     
@@ -397,8 +529,12 @@ gap: 60px;
 }
 .third-footer-btn:hover,
 .third-footer-btn:focus{
-    color: #ad671b;
-    
+     background-image: linear-gradient(80deg, #00ffff, #ff00c3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s ease-in-out; 
+    font-size: 24px;
 }
 .last-list{
     padding: 0;
