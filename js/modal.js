@@ -16,4 +16,7 @@ function splitTextIntoSpans(target) {
   })
 }
 
-splitTextIntoSpans('.s-s-button')
+splitTextIntoSpans('.s-s-button');
+
+
+

@@ -4,6 +4,9 @@ body{
     background-color: rgb(75, 74, 74);
   
 }
+li{
+    list-style: none;
+}
 :root {
     --size-default: 22px;
     --size-sm: 16px;
@@ -40,27 +43,7 @@ body{
     width: 10rem;
    
 }
-/* .logo-svg{
-    
-    position: absolute;
-    left: 5.13px;
-    top: 10px;
-    
-}
-.logo-link{
-    color: #292F36;
-    font-size: 20px;
-    font-family: DM Serif Display;
-    font-weight: 400;
-    line-height: 50px;
-    text-decoration: none;
-    position: relative;
-    left: 40px;
-   transition: .35s ease;
-}
-.logo-link:hover{
-    opacity: 0.6;
-} */
+
 .header-list{
     width: 586px;
     list-style: none;
@@ -160,7 +143,7 @@ body{
   }
   @property --glowColor {
     syntax: "<color>";
-      initial-value: #58dd93;
+      initial-value: #58ddd0;
   }
   @keyframes rotate {
     0% {
@@ -233,30 +216,7 @@ body{
     backdrop-filter: blur(40px);
     backface-visibility: hidden;
   }
-/* .first-section-btn{
-    
-    color: white;
-    font-size: 18px;
-    font-family: Inter;
-    font-weight: 600;
-    line-height: 22.50px;
-    letter-spacing: 0.36px;
-    background-color:#211609 ;
-    border: none;
-    border-radius: 18px;
-    padding: 26px 49px;
-    box-shadow: 0px 10px 20px rgba(192.31, 192.31, 192.31, 0.35);
-    margin-top: 25px;
-    margin-left: 25px;
-}
-.first-section-btn:hover,
-.first-section-btn:focus{
-    box-shadow: 55px 0px 47px #53361dde inset,
-                5px 3px 27px #3d2a1adb;
-                border-radius: 20px;
-                background-color: #987046;
-    transition: all 1.5s;
-} */
+
 /* second section */
 .s-s-container{
     margin-left: auto;
@@ -267,6 +227,8 @@ body{
 }
 .s-s-list{
     display: flex;
+    gap: 45px;
+    padding: 0;
 }
 .s-s-item{
     list-style: none;
@@ -287,14 +249,15 @@ body{
 }
 .s-s-paragraf{
     width: 358px;
-    height: 99px;
+   
     color: #292825;
     font-size: 23px;
     font-family: Jost;
     font-weight: 400;
     line-height: 33px;
-    letter-spacing: 0.22px;
+    letter-spacing: 0.22px; 
     margin-top: 20px;
+    margin-bottom: 0;
     text-align: center;
 }
 .s-s-button{
@@ -348,14 +311,7 @@ body{
       }
    
 }
-/* .s-s-button:hover,
-.s-s-button:focus{
-    color: #CDA274;
-    box-shadow: 0px 0px 7px #CDA274 inset,
-                0px 1px 7px #C76904;
-                border-radius: 10px;
-                transition: all 1s;
-} */
+
 /* section 3 */
 .third-section{
     width: 1210px;
@@ -422,7 +378,7 @@ body{
 .svg-t-s{
     position: absolute;
     z-index: 1;
-    bottom: 60px;
+    bottom: 5px;
     right: 148px;
    
 } 
@@ -433,11 +389,11 @@ body{
     font-family: Jost;
     font-weight: 700;
     line-height: 36px;
-    letter-spacing: 0.24px;
+    letter-spacing: 1px;
     text-decoration: none;
     position: absolute;
-    bottom: 80px;
-    right: 24px;
+    bottom: 20px;
+    right: 17px;
     
 }
 .tel-t-s::before{
@@ -457,18 +413,12 @@ body{
 .tel-t-s:hover::before{
     transform: scale(1);
 }
-/* .header-link::before{
-    bottom: 0;
-    left: 0;
-}
-.header-link:hover::before{
-    transform: scale(1);
-} */
+
 .second-animbtn{
     position: absolute;
     z-index: 1;
     left: 7px;
-    bottom: 95px;
+    bottom: 25px;
 }
 .tel-paragraf{
     width: 169px;
@@ -479,7 +429,7 @@ body{
     line-height: 33px;
     letter-spacing: 0.22px;
     position: absolute;
-    bottom: 90px;
+    bottom: 35px;
     right: -6px;
   
 }
@@ -513,93 +463,100 @@ body{
     width: 1210px;
     height: 700px;
     border-radius: 38px;
-    background-color: #CDA274;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 200px;
 }
 .f-s-container{
-    padding: 20px;
-    margin-top: 194px;
+    display: flex;
+    gap: 10px;
+
 }
 .f-s-title{
     width: 547px;
-    color: white;
+    color: rgb(49, 48, 48);
     font-size: 50px;
     font-family: DM Serif Display;
     font-weight: 400;
     line-height: 62.50px;
     letter-spacing: 1px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 88px;
-    text-shadow: 9px 8px 17px #7b5435;
+    margin: 80px auto;
+    
     
 
 }
-.f-s-list{
+.card{
+    margin: 0 auto;
+    width: 300px;
+    height: 400px;
+    background-color: #000;
+    position: relative;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  
+  }
+  .card::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 140%;
+    background-image: linear-gradient(180deg, #00d5ff , #07f8e4);
+    animation: rotateClockwise 5s linear infinite;
+  }
+  .card::after{
+    content: "";
+    position: absolute;
+    inset: 8px;
+    background-color: #353535;
+    border-radius: inherit;
+  }
+  @keyframes rotateClockwise{
+    100% {
+      rotate: 360deg;
+    }
+  }
+.card-descr{
+    width: 100%;
+    max-width: 80%;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
-    margin-top: 38px;
-    margin-left: -40px;
-    gap: 30px;
+    align-items: center;
+    gap: 1px;
 }
-.f-s-item{
-    background-color: #fff;
-    list-style: none;
-    border-radius: 10%;
-    height: 336px;
-    box-shadow: 1px 0px 17px #6d3f0d;
-    
-}
-.f-s-portrait{
+
+.card img{
+    width: 100px;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    margin-top: 53px;
-    margin-left: 32px;
 }
-.f-s-name{
-    
-    color: #292F36;
-    font-size: 25px;
+.card h4{
+    color: #ececec;
+    font-size: 20px;
     font-family: DM Serif Display;
     font-weight: 400;
     line-height: 37.50px;
     letter-spacing: 0.25px;
-    margin-top: -59px;
-   
+    margin-top: 15px;
 }
-.natasha{
-    margin-left: -30px;
+.country{
+    margin-top: -10px;
+    font-size: 13px;
+    color: #b7b7b7;
 }
-.galario{
-    margin-left: 80px;
+.review{
+    text-align: justify;
+    margin-top: 10px;
+    letter-spacing: 0.02em;
+    color: #ececec;
 }
-.f-s-country{
-    color: #4D5053;
-    font-size: 18px;
-    font-family: Jost;
-    font-weight: 400;
-    line-height: 27px;
-    margin-top: -40px;
-}
-.london{
-    margin-left: -25px;
-}
-.f-s-description{
-    width: 296px;
-    color: #4D5053;
-    font-size: 22px;
-    font-family: Jost;
-    font-weight: 400;
-    line-height: 33px;
-    letter-spacing: 0.22px;
-    text-align: start;
-    padding: 30px;
-}
+
+
 /* section 5 */
 .five-s-container{
     width: 1210px;
@@ -607,52 +564,67 @@ body{
     margin-right: auto;
     margin-top: 188px;
    display: flex;
+   flex-direction: column;
    align-items: center;
    justify-content: center;
    
 }
-.five-s-list{
+.five-s-container h2{
+    color: rgb(49, 48, 48);
+    font-size: 50px;
+    font-family: DM Serif Display;
+    font-weight: 400;
+    line-height: 62.50px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 80px auto;
+}
+.scroller-d{
+    max-width: 100%;
+    &_inner{
+        padding: 1rem 0;
+        display: flex;
+        gap: 4rem;
+        flex-wrap: wrap;
+    }
+
+    &[data-animated="true"]{
+        overflow: hidden;
+        --webkit-mask:
+        linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+        mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+
+     &.scroller-inner{
+        flex-wrap: nowrap;
+        animation: 
+        scrollLinear 
+        var(--_animation-duration, 40s)
+        var(--_animation-direction, forwards)
+        linear 
+        infinite;
+     }   
+    }
+    &[data-duration= "fast"]{
+        --_animation-duration: 20s;
+    }
+}
+@keyframes scrollLinear{
+    to{
+        transform: translate(calc(-50% -.5rem));
+    }
+}
+.partners-list{
     display: flex;
-    gap: 40px;
+    gap: 20px;
 }
-.five-s-item{
-   list-style: none;
-   position: relative;
-  
+.partners-item{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 62.50px;
+    letter-spacing: .1px;
 }
-.piramide{
-    position: relative;
-    display: flex;
-}
-.piramide-paragraf{
-    
-    font-weight: 500 ;
-    font-size: 25px;
-    letter-spacing: 0.1em;
-    position: absolute;
-    left: 186px;
-    top: -9px;
-    
-}
-.svg-cont-second{
-   
-  position: absolute;
-  left: 171px;
-  bottom: 40px;
-}
-.svg-container{
-    display: flex;
-    flex-direction: column;
-    gap: 3.5px;
-    position: absolute;
-    left:145px;
-    bottom: 45.8px;
-}
-.t-svg-container{
-   width: 299px;
-   display: flex;
-   gap: 1px;
-   justify-content: center;
+.partners-item span{
+    color: #00d5ff;
 }
 /* section 6 */
 .six-f-container{
