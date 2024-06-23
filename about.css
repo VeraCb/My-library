@@ -238,7 +238,7 @@ body{
 .f-s-title{
     width: 547px;
     color: white;
-    font-size: 50px;
+    font-size: var(--h2-font);
     font-family: DM Serif Display;
     font-weight: 400;
     line-height: 62.50px;

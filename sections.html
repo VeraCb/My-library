@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Section 6</title>
+</head>
+<body>
+  <style>
+    li{
+      list-style: none;
+    }
+    a{
+      text-decoration: none;
+    }
+    .seven-s-container{
+    width: 1210px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+}
+.seven-s-list{
+    height: 106px;
+    display: flex;
+    
+}
+.seven-s-item{
+    height: 130px;
+    margin: auto;
+    list-style: none;
+    border-right:  1px  solid #00d5ff;
+    padding-right: 50px;
+    
+}
+.seven-s-item:last-child{
+    border: none;
+}
+.value{
+    
+    color: #00d5ffb0;
+    font-size: 85px;
+    font-family: DM Serif Display;
+    font-weight: 400;
+    line-height: 106.25px;
+    letter-spacing: 1.70px;
+    padding: 0;
+    margin: 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.list-p{
+
+    color: #4D5053;
+    font-size: 22px;
+    font-family: Jost;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.22px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  </style>
+
+<section>
+  <div class="seven-s-container">
+  <ul class="seven-s-list">
+      <li class="seven-s-item">
+          <p class="value" akhi="25">0</p>
+          <p class="list-p">Years Of Experiance</p>
+      </li>
+      
+      <li class="seven-s-item">
+          <p class="value" akhi="174">0</p>
+          <p class="list-p">Success Project</p>
+      </li>
+    
+      <li class="seven-s-item">
+          <p class="value" akhi="98">0</p>
+          <p class="list-p">Active Project</p>
+      </li>
+   
+      <li class="seven-s-item">
+          <p class="value" akhi="389">0</p>
+          <p class="list-p">Happy CUstomers</p>
+      </li>
+  </ul>
+  </div>
+</section>
+
+<script>
+
+const counters = document.querySelectorAll('.value');
+const speed = 200;
+
+counters.forEach( counter => {
+   const animate = () => {
+      const value = +counter.getAttribute('akhi');
+      const data = +counter.innerText;
+     
+      const time = value / speed;
+     if(data < value) {
+          counter.innerText = Math.ceil(data + time);
+          setTimeout(animate, 10);
+        }else{
+          counter.innerText = value;
+        }
+     
+   }
+   
+   animate();
+});
+
+
+
+</script>
+
+ 
+</body>
+</html>
