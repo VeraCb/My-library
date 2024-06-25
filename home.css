@@ -1,8 +1,10 @@
 body{
-    font-family: 'DM Serif Display', serif;
-    font-family: 'Jost', sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: rgb(75, 74, 74);
-  
+    margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 li{
     list-style: none;
@@ -21,6 +23,7 @@ li{
     --_clr-400: #00d5ff;
   
     --h2-font: 50px;
+    --font-f: "Roboto", sans-serif;
   }
 .app-container{
     width: 1500px;
@@ -68,7 +71,7 @@ li{
 .header-link{
     color: #1f2327;
     font-size: 20px;
-    font-family: Jost;
+    font-family: var(--font-f);
     font-weight: 500;
     line-height: 25px;
     text-decoration: none;
@@ -116,7 +119,7 @@ li{
     height: 162px;
     color: rgb(213, 249, 255);
     font-size: 65px;
-    font-family: DM Serif Display;
+    font-family: var(--font-f);
     font-weight: 400;
     line-height: 75.25px;
     padding-top: 55px;
@@ -130,11 +133,12 @@ li{
     width: 470px;
     color: rgb(209, 248, 255);
     font-size: 22px;
-    font-family: Inter;
+    font-family: var(--font-f);
+    
     font-weight: 500;
     line-height: 33px;
     letter-spacing: 0.22px;
-    margin:50px 0 15px 0;
+    margin:50px 0 35px 0;
     padding-left: 25px;
 }
 @property --angle {
@@ -227,6 +231,7 @@ li{
     justify-content: center;
 }
 .s-s-list{
+    width: 1210px;
     display: flex;
     gap: 45px;
     padding: 0;
@@ -242,31 +247,30 @@ li{
     width: 152px;
     color: #2e2c29;
     font-size: 25px;
-    font-family: DM Serif Display;
-    font-weight: 400;
+    font-family: var(--font-f);
+    font-weight: 600;
     line-height: 31.25px;
     /* margin-left: 30%; */
     
 }
 .s-s-paragraf{
-    width: 358px;
-   
+    /* width: 358px; */
     color: #292825;
     font-size: 23px;
-    font-family: Jost;
+    font-family: var(--font-f);
     font-weight: 400;
     line-height: 33px;
     letter-spacing: 0.22px; 
     margin-top: 20px;
     margin-bottom: 0;
-    text-align: center;
+    text-align: left;
 }
 .s-s-button{
     color: #32312f;
-    font-size: clamp(1.7rem, calc(2rem + .1vw), 8rem);
+    font-size: clamp(1.3rem, calc(1.5rem + .1vw), 5rem);
     /* user-select: none; */
 
-    font-family: Jost;
+    font-family: var(--font-f);
     font-weight: 800;
     line-height: 22.50px;
     letter-spacing: 0.36px;
@@ -351,7 +355,7 @@ li{
     height: 138px;
     color: rgb(48, 48, 48);
     font-size: 55px;
-    font-family: DM Serif Display;
+    font-family: var(--font-f);
     font-weight: 400;
     line-height: 68.75px;
     position: absolute;
@@ -366,7 +370,7 @@ li{
     height: 99px;
     color: rgb(48, 48, 48);
     font-size: 22px;
-    font-family: Jost;
+    font-family: var(--font-f);
     font-weight: 500;
     line-height: 33px;
     letter-spacing: 0.22px;
@@ -387,7 +391,7 @@ li{
 .tel-t-s{
     color: white;
     font-size: 24px;
-    font-family: Jost;
+    font-family: var(--font-f);
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 1px;
@@ -425,7 +429,7 @@ li{
     width: 169px;
     color: white;
     font-size: 22px;
-    font-family: Jost;
+    font-family: var(--font-f);
     font-weight: 500;
     line-height: 33px;
     letter-spacing: 0.22px;
@@ -437,7 +441,7 @@ li{
 .t-s-button{
     color: white;
     font-size: 18px;
-    font-family: Inter;
+    font-family: var(--font-f);
     font-weight: 500;
     line-height: 22.50px;
     letter-spacing: 0.36px;
@@ -477,7 +481,7 @@ li{
     width: 547px;
     color: rgb(49, 48, 48);
     font-size: 50px;
-    font-family: DM Serif Display;
+    font-family: var(--font-f);
     font-weight: 400;
     line-height: 62.50px;
     letter-spacing: 1px;
@@ -539,7 +543,7 @@ li{
 .card h4{
     color: #ececec;
     font-size: 20px;
-    font-family: DM Serif Display;
+    font-family: var(--font-f);
     font-weight: 400;
     line-height: 37.50px;
     letter-spacing: 0.25px;
@@ -571,7 +575,7 @@ li{
 .five-s-container h2{
     color: rgb(49, 48, 48);
     font-size: var(--h2-font);
-    font-family: DM Serif Display;
+    font-family: var(--font-f);
     font-weight: 400;
     line-height: 62.50px;
     letter-spacing: 1px;
@@ -606,7 +610,7 @@ li{
     
     color: #36383b;
     font-size: var(--h2-font);
-    font-family: DM Serif Display;
+    font-family: var(--font-f);
     font-weight: 400;
     line-height: 75px;
     letter-spacing: 1.20px;
@@ -755,7 +759,7 @@ li{
     
     color: #00d5ffb0;
     font-size: 85px;
-    font-family: DM Serif Display;
+    font-family: var(--font-f);
     font-weight: 400;
     line-height: 106.25px;
     letter-spacing: 1.70px;
@@ -771,7 +775,7 @@ li{
 
     color: #4D5053;
     font-size: 22px;
-    font-family: Jost;
+    font-family: var(--font-f);
     font-weight: 400;
     line-height: 33px;
     letter-spacing: 0.22px;
@@ -781,139 +785,218 @@ li{
     align-items: center;
 }
 /* section 8 */
-.eight-container{
-    margin-left: auto;
-    margin-right: auto;
-}
-.eight-f-container{
-    width: 811px;
-    height: 213px;
-
+.eight-section{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 12px;
-    margin: auto;
-    margin-top: 300px;
-    position: relative;
+    height: 100vh;
+    margin: 0;
+    animation: slide-in-top 0.3s both;
 }
-.eight-f-title{
-    color: #292F36;
-    font-size: 60px;
-    font-family: DM Serif Display;
-    font-weight: 400;
-    line-height: 75px;
-    letter-spacing: 1.20px;
-    margin: auto;
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 80rem;
 }
-.eight-f-paragraf{
-    
-    color: #4D5053;
-    font-size: 28px;
-    font-family: Jost;
-    font-weight: 400;
-    line-height: 42px;
-    letter-spacing: 0.28px;
-    margin: auto;
+
+.cols {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.col {
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    cursor: pointer;
+
+}
+
+.container {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.front,
+.back {
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-position: center;
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     text-align: center;
-    
+    min-height: 370px;
+    box-shadow: 0 0 10px solid rgb(255, 0, 0);
+
+    height: auto;
+    border-radius: 10px blue;
+    color: #9be5f9;
+    font-size: 1.5rem;
 }
-.eight-s-container{
-    margin-top: 209px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.bed-background{
+    background-image: url(./images/bedroom2.jpg);
 }
-.eight-s-list{
-    display: flex;
-    gap: 27px;
+.living-background{
+    background-image: url(./images/livingroom2.jpg);
 }
-.eight-second-item{
-    width: 382px;
-    list-style: none;
-    border: 1px solid #E7E7E7;
-    border-radius: 45px;
+.kitchen-background{
+    background-image: url(./images/kitchen2.jpg);
+}
+.back {
+
+    background-image:url(./images/back-card.jpg);
+    /* background: -webkit-linear-gradient(45deg, #59a5a9 0%, #0e4169 100%); */
+    /* background: -o-linear-gradient(45deg, #5472d4 0%, #5bc5f6 100%); */
+    /* background: linear-gradient(45deg, #838485 0%, #cfd5da 100%); */
+}
+
+.front:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000000a5;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.container:hover .front,
+.container:hover .back {
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.back-p {
+    color: #523131;
+}
+.inner {
+   
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
+}
+
+.container .back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container .front {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container:hover .back {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container:hover .front {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.front .inner p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
     position: relative;
 }
-.eight-second-item:hover,
-.eight-second-item:focus{
-    background-color: #f1ebe5;
-}
 
-.eight-s-img{
-    border-top-left-radius: 45px;
-    border-top-right-radius: 45px;
-    margin: 21px 21px 5px 21px;
-    
-}
-.eight-s-paragraf{
-    width: 118px;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    font-family: Jost;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 24px;
-    letter-spacing: 0.16px;
+.front .inner p:after {
+    content: '';
+    width: 4rem;
+    height: 2px;
     position: absolute;
-    top: 260px;
-    left: 41px;
-    background-color: rgba(0, 0, 0, 0.50) ;
-    padding: 6px 7px 7px 10px;
-    border-radius: 8px;
-    border-bottom-left-radius: 0px;
-    
-}
-.eight-s-title{
-    width: 290px;
-    text-align: left;
-    color: #292F36;
-    font-size: 25px;
-    font-family: DM Serif Display;
-    font-weight: 400;
-    line-height: 31.25px;
-    letter-spacing: 0.50px;
-    margin: 0px 0px 0px 21px ;
+    background: #eaeaea;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
 }
 
-.eight-btn-container{
-    display: flex;
-    gap: 50px;
-    margin: 15px 0px 10px 21px;
+.front .inner span {
+    color: rgba(197, 232, 247, 0.7);
+    font-family: 'Montserrat';
+    font-weight: 300;
 }
-.eight-t-paragraf{
-   width: 223px;
-   color: #4D5053;
-    font-size: 16px;
-    font-family: Jost;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 24px;
-    letter-spacing: 0.16px;
+
+@media screen and (max-width: 64rem) {
+    .col {
+        width: calc(33.333333% - 2rem);
+    }
 }
-.eight-s-button{
-    border: none;
-    background-color: transparent;
+
+@media screen and (max-width: 48rem) {
+    .col {
+        width: calc(50% - 2rem);
+    }
 }
-.eight-svg:hover,
-.eight-svg:focus{
-    border-color: #C76904;
-    box-shadow: 0px 10px 30px #ddb28ade ,
-                0px 10px 20px #dfb99adb;
-                border-radius: 50%;
-                background-color: transparent;
-                transition: all 2s; 
+
+@media screen and (max-width: 32rem) {
+    .col {
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
 }
 /* footer */
 /* first part of footer */
 .first-footer-cont{
     width: 1500px;
     height: 430px;
-    margin-top: 105px;
-    background-image: url(./images/photo-footer.jpg);
-    background-size: contain;
+    /* margin-top: 105px; */
+    background-image: url(./images/livingroom.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -922,7 +1005,7 @@ li{
 .first-footer-title{
     color: white;
     font-size: 50px;
-    font-family: DM Serif Display;
+    font-family: var(--font-f);
     font-weight: 400;
     line-height: 62.50px;
     margin: 85px 0 0 0 ;
@@ -930,7 +1013,7 @@ li{
 .first-footer-prg{
     color: white;
     font-size: 22px;
-    font-family: Jost;
+    font-family: var(--font-f);
     font-weight: 500;
     line-height: 33px;
     letter-spacing: 0.22px;
@@ -939,7 +1022,7 @@ li{
 .first-footer-btn{
     color: white;
     font-size: 18px;
-    font-family: Jost;
+    font-family: var(--font-f);
     font-weight: 600;
     line-height: 22.50px;
     letter-spacing: 0.36px;
@@ -1039,7 +1122,7 @@ transition-delay: 0.2ms;
 .logo-link-second{
     color: #292F36;
     font-size: 40px;
-    font-family: DM Serif Display;
+    font-family: var(--font-f);
     font-weight: 400;
     line-height: 50px;
     text-decoration: none;
@@ -1048,7 +1131,7 @@ transition-delay: 0.2ms;
     width: 393px;
     color: #4D5053;
     font-size: 22px;
-    font-family: Jost;
+    font-family: var(--font-f);
     font-weight: 400;
     line-height: 33px;
     letter-spacing: 0.22px;
@@ -1072,7 +1155,7 @@ transition-delay: 0.2ms;
 .third-footer-title{
     color: #292F36;
     font-size: 25px;
-    font-family: DM Serif Display;
+    font-family: var(--font-f);
     font-weight: 400;
     line-height: 31.25px;
 }
@@ -1081,7 +1164,7 @@ transition-delay: 0.2ms;
     background-color: transparent;
     color: #4D5053;
     font-size: 22px;
-    font-family: Jost;
+    font-family: var(--font-f);
     font-weight: 400;
     line-height: 66px;
     letter-spacing: 0.22px;
@@ -1100,14 +1183,14 @@ transition-delay: 0.2ms;
 .third-footer-prg{
     color: #4D5053;
     font-size: 22px;
-    font-family: Jost;
+    font-family: var(--font-f);
     font-weight: 400;
    
 }
 .third-footer-link{
     color: #4D5053;
     font-size: 22px;
-    font-family: Jost;
+    font-family: var(--font-f);
     font-weight: 400;
     text-decoration: none;
     
