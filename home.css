@@ -2,14 +2,18 @@ body{
     font-family: "Roboto", sans-serif;
     background-color: rgb(75, 74, 74);
     margin: 0;
-            padding: 0;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 li{
     list-style: none;
 }
+a{
+    text-decoration: none;
+}
 :root {
+    --back-color: #f0f8ff;
     --size-default: 22px;
     --size-sm: 16px;
     --color-green: #00d5ff;
@@ -22,14 +26,14 @@ li{
     --_clr-700: #94e6f7;
     --_clr-400: #00d5ff;
   
-    --h2-font: 50px;
+    --h2-font: 3.2rem;
     --font-f: "Roboto", sans-serif;
   }
 .app-container{
     width: 1500px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(252, 249, 244);
+    background-color: var(--back-color);
 }
 /* header */
 .header-container{
@@ -38,7 +42,7 @@ li{
     width: 1210px;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
+    padding: 1.1rem;
 }
 .logo-container{
      position: relative;
@@ -50,24 +54,15 @@ li{
 
 .header-list{
     width: 586px;
+    max-width: 100%;
     list-style: none;
     display: flex;
     text-align: center;
+    justify-content: flex-end;
     gap: 30px;
 }
 
-.fa-search{
-    color: rgb(110, 110, 110);
-    
-    
-}
-.fa-search:hover,
-.fa-search:focus{
-    color: #C76904;
-    box-shadow: 0px 0px 9px #C76904 inset,
-                0px 2px 7px #d67004;
-                border-radius: 10px;
-}
+
 .header-link{
     color: #1f2327;
     font-size: 20px;
@@ -107,7 +102,7 @@ li{
     /* border-radius: 100px 0; */
     margin-left: auto;
     margin-right: auto;
-    margin-top: 62px;
+   
     background-size: cover;
     background-repeat: no-repeat;
     border-image: fill 0 linear-gradient(#0001, #000);
@@ -217,8 +212,8 @@ li{
     font-size: 22px;
     z-index: 1;
     transition: all 0.18s ease;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(40px);
+    background: rgb(0, 0, 0);
+    --webkit-backdrop-filter: blur(40px);
     backface-visibility: hidden;
   }
 
@@ -263,7 +258,7 @@ li{
     letter-spacing: 0.22px; 
     margin-top: 20px;
     margin-bottom: 0;
-    text-align: left;
+    text-align: center;
 }
 .s-s-button{
     color: #32312f;
@@ -789,8 +784,8 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    height: auto;
+    margin: 10rem 0;
     animation: slide-in-top 0.3s both;
 }
 
@@ -987,12 +982,38 @@ li{
         margin: 0 0 2rem 0;
     }
 }
-/* footer */
-/* first part of footer */
+/*============= footer ==============*/
+.footer{
+    background-color:rgb(201, 241, 253);
+    border-top: 1px solid #8acce1;
+    font-size: 17px;
+    padding: 15px 5px;
+    color: #3f3f3fce;
+    text-align: center;
+}
+.main-footer{
+    padding: 70px 8px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.main-footer h3{
+    font-size: 22px;
+    line-height: 117%;
+    color: rgb(26, 25, 25);
+    margin-bottom: 10px;
+    font-weight: 500
+}
+.main-footer ul li a{
+    color: rgba(116, 116, 116, 0.699);
+}
+
+/*
 .first-footer-cont{
     width: 1500px;
     height: 430px;
-    /* margin-top: 105px; */
+    
     background-image: url(./images/livingroom.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1032,7 +1053,7 @@ li{
     box-shadow: 0px 10px 20px #1F2022;
     padding: 26px 37px;
 }
-/* second container of footer */
+
 .second-general-div{
 display: flex;
 justify-content: center;
@@ -1040,8 +1061,7 @@ margin-top: 41px;
 margin-bottom: 131px;
 gap: 101px;
 }
-/* second part of footer */
-/* svg effect */
+
 .facebook-svg{
 border: 2px solid #0679e6;
 border-radius: 50% ;
@@ -1147,7 +1167,7 @@ transition-delay: 0.2ms;
     list-style: none;
     
 }
-/* third-five part of footer */
+
 .third-footer-item{
     list-style: none;
     
@@ -1200,3 +1220,4 @@ transition-delay: 0.2ms;
     text-align: center;
    padding-bottom: 15px;
 }
+   */

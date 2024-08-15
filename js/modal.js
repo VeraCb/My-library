@@ -19,24 +19,52 @@ function splitTextIntoSpans(target) {
 splitTextIntoSpans('.s-s-button');
 
 
-// animated numbers
-const counters = document.querySelectorAll('.value');
-const speed = 200;
+// ===============animated numbers ==================
 
-counters.forEach( counter => {
-   const animate = () => {
-      const value = +counter.getAttribute('akhi');
-      const data = +counter.innerText;
+
+// const counters = document.querySelectorAll('.value');
+// const speed = 200;
+
+// counters.forEach( counter => {
+//    const animate = () => {
+//       const value = +counter.getAttribute('akhi');
+//       const data = +counter.innerText;
      
-      const time = value / speed;
-     if(data < value) {
-          counter.innerText = Math.ceil(data + time);
-          setTimeout(animate, 10);
-        }else{
-          counter.innerText = value;
-        }
+//       const time = value / speed;
+//      if(data < value) {
+//           counter.innerText = Math.ceil(data + time);
+//           setTimeout(animate, 10);
+//         }else{
+//           counter.innerText = value;
+//         }
      
-   }
+//    }
    
-   animate();
+//    animate();
+// });
+
+const numbersSection = document.querySelector(".number-section")
+
+window.addEventListener("scroll", () => {
+  const numbersSectionPosition = numbersSection.getBoundingClientRect();
+
+  if(numbersSectionPosition.top < window.innerHeight && numbersSectionPosition.bottom >= 0){
+    document.querySelectorAll(".value").forEach(counter => {
+      const target = parseInt(counter.getAttribute("akhi"));
+      const speed = 4000;
+
+      const updateCount = () => {
+        const value = parseInt(counter.innerText);
+        const inc = target / speed;
+
+        if(value < target){
+          counter.innerText = Math.ceil(value + inc);
+          setTimeout(updateCount, 10);
+        }else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    })
+  }
 });
